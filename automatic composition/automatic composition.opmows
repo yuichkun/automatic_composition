@@ -12,7 +12,7 @@ NIL
 
 ;;; composer
 
-NIL 
+"score.opmo" 
 
 ;;; list of assistants
 
@@ -20,6 +20,6 @@ NIL
 
 ;;; grid menu state 
 
-(:GRID-MENU-STATE (:COMPOSER NIL :ASSISTANTS NIL))
+(:GRID-MENU-STATE (:COMPOSER ("score.opmo") :ASSISTANTS NIL))
 
 ;;; quick-view pathname
