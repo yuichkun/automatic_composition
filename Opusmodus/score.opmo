@@ -1,0 +1,3 @@
+(setf len-1 (gen-divide '(2 5 7) (rnd-sample 200 '(c4 cs4 fs4 g4 c5))))
+
+(make-omn :pitch len-1 :length (gen-tuplet 1 1 'm 'n 'q (mapcar 'length len-1)))

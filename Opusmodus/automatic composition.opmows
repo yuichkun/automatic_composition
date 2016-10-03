@@ -4,22 +4,27 @@
 
 ;;; navigator
 
-(:GROUP "root" ((:FILE "score.opmo")))
+(:GROUP "root" ((:FILE "score.opmo") (:FILE "hello.opmo")))
 
 ;;; layout plist
 
-NIL
+(:SELECTED-UTILITIES-TAB-TAG 1)
 
 ;;; composer
 
-"score.opmo" 
+"hello.opmo" 
 
 ;;; list of assistants
 
-NIL 
+("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/Documentation/2. Tutorial Guide/Stages 16-30/Stage 28.rtfd/")
 
 ;;; grid menu state 
 
-(:GRID-MENU-STATE (:COMPOSER ("score.opmo") :ASSISTANTS NIL))
+(:GRID-MENU-STATE
+ (:COMPOSER
+  ("hello.opmo"
+   "/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/Documentation/2. Tutorial Guide/Stages 16-30/Stage 28.opmo")
+  :ASSISTANTS
+  ("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/Documentation/2. Tutorial Guide/Stages 16-30/Stage 28.rtfd/")))
 
 ;;; quick-view pathname
