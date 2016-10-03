@@ -1,0 +1,6 @@
+;;;Load Files;;;
+(let ((files '("config" "osc" "song1" "song2" "song3" "no-music" "eval-songs" "transitions" "thread-controller")))
+  (loop for file in files do 
+    (load (merge-pathnames file *load-truename*))
+  )
+)
