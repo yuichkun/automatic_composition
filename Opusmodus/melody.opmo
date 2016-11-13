@@ -1,0 +1,9 @@
+(setf sine (gen-white-noise 100))
+(setf melo (tonality-map '(pentatonic) (vector-to-pitch '(c3 c5) sine)))
+(setf omn (make-omn :pitch melo :length (span melo '(s))))
+(def-score test
+           (:key-signature 'atonal
+            :time-signature '(4 4)
+            :tempo 120)
+(piano :omn omn)
+)

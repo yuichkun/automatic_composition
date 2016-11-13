@@ -1,0 +1,27 @@
+;;; file version
+
+3 
+
+;;; navigator
+
+(:GROUP "root"
+ ((:FILE "main.opmo") (:FILE "score.opmo") (:FILE "melody.opmo")))
+
+;;; layout plist
+
+(:SELECTED-UTILITIES-TAB-TAG 1)
+
+;;; composer
+
+"melody.opmo" 
+
+;;; list of assistants
+
+NIL 
+
+;;; grid menu state 
+
+(:GRID-MENU-STATE
+ (:COMPOSER ("melody.opmo" "main.opmo") :ASSISTANTS NIL))
+
+;;; quick-view pathname
