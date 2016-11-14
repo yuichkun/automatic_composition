@@ -1,5 +1,0 @@
-(setf len-1 (gen-divide '(2 5 7) (rnd-sample 200 '(c4 cs4 fs4 g4 c5))))
-
-(setf result (make-omn :pitch len-1 :length (gen-tuplet 1 1 'm 'n 'q (mapcar 'length len-1))))
-
-(def-score test (:key-signature 'atonal :time-signature '(4 4) :tempo 120) (piano :omn result))

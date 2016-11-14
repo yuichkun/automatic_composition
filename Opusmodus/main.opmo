@@ -1,8 +1,5 @@
-;;;Load Files;;;
 (let ((files '("score" "melody")))
-  (loop for file in files do 
+  (loop for file in files do
     (load (merge-pathnames file *load-truename*))
   )
 )
-
-melody

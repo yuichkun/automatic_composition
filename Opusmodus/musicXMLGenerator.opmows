@@ -4,8 +4,7 @@
 
 ;;; navigator
 
-(:GROUP "root"
- ((:FILE "main.opmo") (:FILE "score.opmo") (:FILE "melody.opmo")))
+(:GROUP "root" ((:FILE "main.opmo") (:FILE "melody.opmo")))
 
 ;;; layout plist
 
