@@ -1,0 +1,6 @@
+(setf omn (renda 'd6 '(5e) 3))(def-score oboe
+         (:key-signature 'atonal
+          :time-signature t-sig
+          :tempo 120)
+(oboe :omn omn)
+)

@@ -1,0 +1,28 @@
+;;; file version
+
+3 
+
+;;; navigator
+
+(:GROUP "root" ((:FILE "score.opmo")))
+
+;;; layout plist
+
+(:SELECTED-UTILITIES-TAB-TAG 6)
+
+;;; composer
+
+"score.opmo" 
+
+;;; list of assistants
+
+("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")
+
+;;; grid menu state 
+
+(:GRID-MENU-STATE
+ (:COMPOSER ("score.opmo") :ASSISTANTS
+  ("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Notation/display-musicxml.rtfd/"
+   "/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")))
+
+;;; quick-view pathname

@@ -1,29 +1,34 @@
 var fs = require('fs');
-var logger = require('./lib/logger.js');
-var jsonConverter = require('./lib/jsonConverter.js');
-var Generator = require('./lib/generator.js');
 var csvParse = require('csv-parse');
-const csvPath = '../Data/timeline.csv';
+//Object
+var opmoGenerator = require('opmoGenerator');
+//Function
+var jsonConverter = opmoGenerator.jsonConverter;
+//Class
+var Generator = opmoGenerator.generator;
+const csvPath = '../Excel/timeline.csv';
 var parseOptions = {delimiter: ','};
 
 // //Read the csv file and pass it to Opmo Generator
 fs.createReadStream(csvPath).pipe(
   csvParse(parseOptions, function(err, data){
-    logger.line();
-    logger.readCSV(csvPath,data);
-    var json = jsonConverter(logger,data);
+    var json = jsonConverter(csvPath, data);
     main(json);
   })
 );
 
 function main(data){
-  var gen = new Generator(fs,logger,data);
-  //Calculate the time signature
-  gen.getTimeSignature();
+  var gen = new Generator(data);
+
+  //Generate Global File
+  gen.genGlobalFile();
+
   //Generate SnippetFiles
   gen.genSnippetFiles();
+
   //Generate the Main Opmo file that loads all the belonging files
   gen.genMainFile();
-  //EXIT
-  logger.exit();
+
+  //Exit
+  gen.exit();
 }

@@ -1,5 +1,8 @@
-(let ((files '("score" "melody")))
+(let ((files '("global" "flute" "oboe" "clarinet" "timpani" "horn" "violin" "viola")))
   (loop for file in files do
     (load (merge-pathnames file *load-truename*))
   )
 )
+(compile-score '(flute oboe clarinet timpani horn violin viola))
+(display-musicxml *last-score*)
+(display-midi *last-score*)

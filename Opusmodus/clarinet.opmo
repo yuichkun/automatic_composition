@@ -1,0 +1,6 @@
+(setf omn (renda 'd6 '(5e) 14))(def-score clarinet
+         (:key-signature 'atonal
+          :time-signature t-sig
+          :tempo 120)
+(clarinet :omn omn)
+)

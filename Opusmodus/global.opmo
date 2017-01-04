@@ -1,0 +1,12 @@
+
+(defun renda (pitch unit count)
+  (let '(ret nil) '(ret-p nil) '(ret-len nil)
+    (setf ret-p (gen-repeat count pitch))
+    (setf ret-len (length-adjust '(w) (span ret-p unit) ))
+    (setf ret (make-omn :pitch ret-p :length ret-len :articulation '(stacc) :velocity '(pp)))
+    (return-from renda ret)
+  )
+)
+(setf test-renda (renda 'd6 '(5e) 8))
+
+(setf t-sig (get-time-signature '((3/4)(14/16)(5/8)(2/4)(3/8)(3/16))))

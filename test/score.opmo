@@ -1,0 +1,18 @@
+(setf pitches (gen-repeat 8 (integer-to-pitch (rnd-row))))
+(setf len (span pitches '(s)))
+(setf omn (make-omn :pitch pitches :length len))
+
+(def-score test
+           (:key-signature 'atonal
+            :time-signature '(4 4)
+            :tempo 120)
+(inst :omn omn))
+
+
+(setf path "~/Desktop/test/asdfasdfasd")
+
+
+(compile-score 'test :output :musicxml :file path)
+
+
+

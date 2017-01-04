@@ -1,0 +1,6 @@
+(setf omn (renda 'd6 '(5e) 5))(def-score timpani
+         (:key-signature 'atonal
+          :time-signature t-sig
+          :tempo 120)
+(timpani :omn omn)
+)
