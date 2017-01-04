@@ -5,12 +5,14 @@ var convert = function(logger,data){
   //scale
   obj.scale = data[1];
   //get count of insts.(starts from 2)
-  obj.instCount = Object.keys(data).length;
+  var numOfKeys = Object.keys(data).length;
+  obj.instCount = numOfKeys-2;
+  obj.insts = {};
   //loop through instruments
-  for(var i = 2; i < obj.instCount; i++){
-    obj[data[i][0]] = [];
+  for(var i = 2; i < numOfKeys; i++){
+    obj.insts[data[i][0]] = [];
     for(var j = 1; j < data[i].length; j++){
-      obj[data[i][0]].push(data[i][j]);
+      obj.insts[data[i][0]].push(data[i][j]);
     }
   }
   logger.convertToJSON(obj);

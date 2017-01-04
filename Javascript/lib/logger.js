@@ -3,25 +3,26 @@ module.exports = {
     console.log("-------------------------------------------------------------");
   },
   start : function(){
-    this.line();
     console.log("STARTED: musicXMLConverter");
     this.line();
   },
-  readCSV : function(csvPath){
-    console.log('READING: CSV file from ' + csvPath);
+  readCSV : function(csvPath,data){
+    console.log('READING: CSV file from ' + csvPath + "\n");
+    console.log('Raw Data: \n' + data);
     this.line();
   },
   convertToJSON : function(obj){
-    console.log('CONVERTING: CSV file to JSON');
+    console.log('CONVERTING: CSV file into JSON\n');
+    console.log('JSON Data:');
     console.log(obj);
     this.line();
   },
-  genOpmo : function(){
-    console.log('GENERATING: an opmo file');
+  genOpmo : function(inst){
+    console.log('GENERATING: an opmo file for ' + inst.name);
     this.line();
   },
-  showOpmo : function(opmo){
-    console.log("GENERATED:\n\n" + opmo);
+  showOpmo : function(opmo,name){
+    console.log(`GENERATED: ${name}\n\n` + opmo);
     this.line();
   },
   export : function(content,path){
