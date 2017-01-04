@@ -10,4 +10,8 @@ for generating musicXML files.
 - Sibelius  
 for parsing the musicXML files into the sheetmusic and editing the total layout.
 
-
+## How to Start
+1. Make a timeline.csv in Data folder
+2. In /Javascipt, $node app.js
+3. open musicXMLGenerator.opmows
+4. evaluate main.opmo
