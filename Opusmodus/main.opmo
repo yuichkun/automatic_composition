@@ -1,8 +1,10 @@
-(let ((files '("global" "flute" "oboe" "clarinet" "timpani" "horn" "violin" "viola")))
+(let ((files '("global" "flute" "oboe")))
   (loop for file in files do
     (load (merge-pathnames file *load-truename*))
   )
 )
-(compile-score '(flute oboe clarinet timpani horn violin viola))
+
+(setf path "~/Desktop/musicXMLGenerator/XML/output")
+(compile-score '(flute oboe) :output :musicxml :file path)
 (display-musicxml *last-score*)
 (display-midi *last-score*)

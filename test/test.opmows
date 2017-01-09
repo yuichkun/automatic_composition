@@ -16,13 +16,10 @@
 
 ;;; list of assistants
 
-("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")
+NIL 
 
 ;;; grid menu state 
 
-(:GRID-MENU-STATE
- (:COMPOSER ("score.opmo") :ASSISTANTS
-  ("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Notation/display-musicxml.rtfd/"
-   "/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")))
+(:GRID-MENU-STATE (:COMPOSER ("score.opmo") :ASSISTANTS NIL))
 
 ;;; quick-view pathname

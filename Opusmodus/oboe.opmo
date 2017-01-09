@@ -1,6 +1,22 @@
-(setf omn (renda 'd6 '(5e) 3))(def-score oboe
+(setf pitch '(d6))
+(setf length (stretch 5/4 pitch ))
+(setf omn0 (make-omn :pitch pitch :length length))
+(setf pitch '(d6))
+(setf length (stretch 5/4 pitch ))
+(setf omn1 (make-omn :pitch pitch :length length))
+(setf pitch '(d6))
+(setf length (stretch 5/4 pitch ))
+(setf omn2 (make-omn :pitch pitch :length length))
+(setf pitch '(d6))
+(setf length (stretch 5/4 pitch ))
+(setf omn3 (make-omn :pitch pitch :length length))
+(setf pitch '(d6))
+(setf length (stretch 5/4 pitch ))
+(setf omn4 (make-omn :pitch pitch :length length))
+(setf omn (assemble-seq '(omn0 omn1 omn2 omn3 omn4 )))
+(def-score oboe
          (:key-signature 'atonal
-          :time-signature t-sig
+          :time-signature (get-time-signature omn)
           :tempo 120)
 (oboe :omn omn)
 )

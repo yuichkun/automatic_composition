@@ -1,6 +1,0 @@
-(setf omn (renda 'd6 '(5e) 20))(def-score viola
-         (:key-signature 'atonal
-          :time-signature t-sig
-          :tempo 120)
-(viola :omn omn)
-)

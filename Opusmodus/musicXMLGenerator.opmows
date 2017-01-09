@@ -15,7 +15,7 @@
  :ASSISTANT-VISIBLE-P T :LISTENER-RECT
  #(0.0D0 648.0D0 898.0D0 149.0D0) :LISTENER-COLLAPSED-P NIL
  :UTILITIES-RECT #(1063.0D0 0.0D0 256.0D0 797.0D0)
- :SELECTED-UTILITIES-TAB-TAG 1 :QUICK-VIEW-COLLAPSED-P T
+ :SELECTED-UTILITIES-TAB-TAG 6 :QUICK-VIEW-COLLAPSED-P T
  :UTILITIES-COLLAPSED-P NIL)
 
 ;;; composer
@@ -24,10 +24,12 @@
 
 ;;; list of assistants
 
-NIL 
+("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")
 
 ;;; grid menu state 
 
-(:GRID-MENU-STATE (:COMPOSER ("main.opmo") :ASSISTANTS NIL))
+(:GRID-MENU-STATE
+ (:COMPOSER ("main.opmo") :ASSISTANTS
+  ("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")))
 
 ;;; quick-view pathname
