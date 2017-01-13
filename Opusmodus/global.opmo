@@ -1,7 +1,9 @@
 
 (defun stretch (dur pitch)
-  (let '(ret nil) '(ret-len nil)
-    (setf ret (gen-tuplet 1 1 'm 'n dur (length (flatten pitch))))
+  (let '(ret nil) '(pitch-len nil)
+    (setf pitch-len (length (flatten pitch)))
+    (setf ret (gen-repeat pitch-len (/ dur pitch-len)))
     (return-from stretch ret)
   )
 )
+(setf harmony1 '(c4e4g4))(setf harmony1 '(c4e4g4))(setf harmony1 '(c4e4g4))(setf harmony1 '(c4e4g4))(setf harmony1 '(c4e4g4))

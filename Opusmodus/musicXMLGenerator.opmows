@@ -4,7 +4,8 @@
 
 ;;; navigator
 
-(:GROUP "root" ((:FILE "main.opmo")))
+(:GROUP "root"
+ ((:FILE "main.opmo") (:FILE "oboe.opmo") (:FILE "global.opmo")))
 
 ;;; layout plist
 
@@ -20,16 +21,15 @@
 
 ;;; composer
 
-"main.opmo" 
+"oboe.opmo" 
 
 ;;; list of assistants
 
-("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")
+NIL 
 
 ;;; grid menu state 
 
 (:GRID-MENU-STATE
- (:COMPOSER ("main.opmo") :ASSISTANTS
-  ("/Applications/Opusmodus.app/Contents/Resources/English.lproj/system.omdocset/System Library/System/Score/compile-score.rtfd/")))
+ (:COMPOSER ("oboe.opmo" "main.opmo") :ASSISTANTS NIL))
 
 ;;; quick-view pathname
