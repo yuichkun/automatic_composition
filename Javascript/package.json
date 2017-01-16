@@ -5,7 +5,8 @@
   "main": "generator.js",
   "dependencies": {
     "csv": "^1.1.0",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "mathjs": "^3.8.1"
   },
   "devDependencies": {
     "gulp": "^3.9.1"
