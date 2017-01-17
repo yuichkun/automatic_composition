@@ -6,8 +6,8 @@ var opmoGenerator = require('opmoGenerator');
 var jsonConverter = opmoGenerator.jsonConverter;
 //Class
 var Generator = opmoGenerator.generator;
-const csvPath = '../Excel/test.csv';
-// const csvPath = '../Excel/timeline.csv';
+// const csvPath = '../Excel/test.csv';
+const csvPath = '../Excel/timeline.csv';
 var parseOptions = {delimiter: ','};
 
 // //Read the csv file and pass it to Opmo Generator
