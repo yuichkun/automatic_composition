@@ -1,14 +1,11 @@
 var fs = require('fs');
 var csvParse = require('csv-parse');
-//Object
 var opmoGenerator = require('opmoGenerator');
-//Function
 var jsonConverter = opmoGenerator.jsonConverter;
-//Class
 var Generator = opmoGenerator.generator;
-// const csvPath = '../Excel/test.csv';
-const csvPath = '../Excel/timeline.csv';
-var parseOptions = {delimiter: ','};
+const csvPath = '../Excel/test.csv';
+// const csvPath = '../Excel/timeline.csv';
+const parseOptions = {delimiter: ','};
 
 // //Read the csv file and pass it to Opmo Generator
 fs.createReadStream(csvPath).pipe(
